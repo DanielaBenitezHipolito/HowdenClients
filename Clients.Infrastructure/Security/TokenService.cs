@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using Clients.Domain.Interfaces;
+﻿using Clients.Domain.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace Clients.Infrastructure.Security
 {
-    public class TokenService:ITokenService
+    public class TokenService : ITokenService
     {
         private readonly IConfiguration _configuration;
         public TokenService(IConfiguration configuration)

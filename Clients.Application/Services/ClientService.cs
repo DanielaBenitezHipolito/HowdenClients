@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Clients.Application.DTOs;
 using Clients.Application.Interfaces;
-using Clients.Application.DTOs;
 using Clients.Domain.Interfaces;
 
 namespace Clients.Application.Services

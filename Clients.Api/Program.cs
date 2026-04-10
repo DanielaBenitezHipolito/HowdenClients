@@ -1,4 +1,3 @@
-using System.Text;
 using Clients.Application.Interfaces;
 using Clients.Application.Services;
 using Clients.Domain.Interfaces;
@@ -9,6 +8,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,12 +27,12 @@ builder.Services.AddSwaggerGen(options =>
     });
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
-        Name= "Authorization",
-        Type= SecuritySchemeType.Http,
-        Scheme= "bearer",
-        BearerFormat="JWT",
-        In= ParameterLocation.Header,
-        Description= "Ingrese el token JWT"
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Ingrese el token JWT"
     });
     options.AddSecurityRequirement(new OpenApiSecurityRequirement
     {

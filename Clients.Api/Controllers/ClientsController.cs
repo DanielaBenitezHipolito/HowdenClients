@@ -1,6 +1,6 @@
-using Microsoft.AspNetCore.Mvc;
 using Clients.Application.Interfaces;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Clients.Api.Controllers
 {

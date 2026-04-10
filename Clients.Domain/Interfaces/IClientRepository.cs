@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Clients.Domain.Entities;
+﻿using Clients.Domain.Entities;
 
 namespace Clients.Domain.Interfaces
 {
